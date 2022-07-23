@@ -1,0 +1,19 @@
+$ad_small: 48px;
+$ad_big: 320px;
+
+.ad{
+	border-top: solid gray 0.5px;
+	font-size: 3rem;
+	border: solid black 0.5px;
+
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.ad_small{
+	height: $ad_small;
+}
+.ad_big{
+	height: $ad_big;
+}

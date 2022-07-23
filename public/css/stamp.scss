@@ -1,0 +1,99 @@
+.stamp{
+	$charaMesse_size: 150px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	h2{
+		font-size: 2.5rem;
+	}
+	img{
+		position: relative;
+		top: -5rem;
+		right: -20rem;
+
+		text-align: right;
+		width: $charaMesse_size;
+		height: $charaMesse_size;
+	}
+	a{
+		position: relative;
+		top: -5rem;
+		right: -23rem;
+		font-size: 1.7rem;
+	}
+	$stampPsize: 22rem;
+	p{
+		position: relative;
+		top: -15rem;
+
+		width: $stampPsize;
+		height: $stampPsize;
+		border: solid black 0.5px;
+		border-radius: 50%;
+		font-size: 2.3rem;
+
+		line-height: 4rem;
+
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+$stampStampSize: 11rem;
+.stampStamp{
+	position: relative;
+	top: -26rem;
+	right: -22rem;
+
+	width: $stampStampSize;
+	height: $stampStampSize;
+	background-color: #E24141;
+	border: solid black 0.5px;
+	border-radius: 50%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	p{
+		margin-top: 10px;
+		font-size: 1.5rem;
+	}
+	h2{
+		font-size: 5rem;
+	}
+}
+
+.stampCalendar{
+	margin-top: -20rem;
+	h1{
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+	table{
+		border: solid black 0.5px;
+		margin-bottom: 3rem;
+		td{
+			width: 5rem;
+			height: 5rem;
+			border: solid black 0.5px;
+			p{
+				width: 4rem;
+				height: 4rem;
+				margin: 0.5rem;
+				font-size: 3rem;
+
+				border: solid black 0.5px;
+				background-color: #F94949;
+				border-radius: 50%;
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+
+	}
+}

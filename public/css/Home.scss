@@ -1,0 +1,125 @@
+// 天気
+$img_size: 80px;
+.weather{
+	display: flex;
+	text-align: center;
+
+	.weatherLeftBlock{
+		padding: 10px;
+		margin-top: 10px;
+		.weather_date{
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+		.weather_place{
+			font-size: 2.6rem;
+			margin-bottom: 10px;
+		}
+		.weather_rainyP{
+			font-size: 2rem;
+		}
+	}
+
+	.weatherRightBlock{
+		margin: auto;
+		img{
+			width: $img_size;
+			height: $img_size;
+			border-radius: 50%;
+			border: solid black 0.5px;
+		}
+		.weather_temp{
+			margin-top: 5px;
+			font-size: 1.5rem;
+		}
+	}
+
+}
+
+// キャラ
+.charaMesse{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.charaMesse_messe{
+		text-align: center;
+		p{
+			margin-top: 35px;
+			font-size: 1.3rem;
+			line-height: 2rem;
+		}
+	}
+}
+// 電車
+.train{
+
+	.myRoute{
+		.toGo{
+			display: flex;
+			margin-top: 30px;
+			justify-content: space-around;
+			padding: 0 30px;
+			p{
+				height: 25px;
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+				justify-content: center;
+
+			}
+
+			.myRouteStation{
+				border: solid black 0.5px;
+				font-size: 1.2rem;
+				width: 80px;
+			}
+		}
+
+		.time{
+			margin-top: 10px;
+			text-align: center;
+			font-size: 1.8rem;
+			line-height:3rem;
+
+			.timeResult{
+				font-size: 2.4rem;
+			}
+		}
+	}
+
+
+	.lateInfo{
+		margin-top: 30px;
+		.lateInfo_item{
+			margin-bottom: 30px;
+			display: flex;
+			img{
+				width: 55px;
+				height: 55px;
+				border-radius: 50%;
+			}
+			.lateInfo_item_block{
+				margin-left: 20px;
+
+				h2{
+					font-size: 1.9rem;
+					position: relative;
+					top: -10px;
+				}
+				p{
+					width: 270px;
+					height: 40px;
+					font-size: 1.5rem;
+					border: solid black 0.5px;
+					background-color: #FF6060;
+
+					display: flex;
+					text-align: center;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+
+		}
+	}
+}

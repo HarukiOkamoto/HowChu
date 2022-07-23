@@ -1,0 +1,47 @@
+.mypage{
+	text-align: center;
+
+	h1{
+		font-size: 2.5rem;
+		margin: 30px 0;
+	}
+
+	p{
+		font-size: 1.7rem;
+		margin: 2rem 0 0.5rem;
+	}
+
+	input{
+		border: solid black 0.5px;
+		width: 27rem;
+		height: 3.3rem;
+		text-align: left;
+	}
+	button{
+		border: solid black 0.5px;
+		width: 11.3rem;
+		height: 3.8rem;
+		font-size: 1.7rem;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.profileImg{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.profile{
+			width: 16.5rem;
+			height: 16.5rem;
+			border-radius: 50%;
+		}
+		.camera{
+			width: 4rem;
+			height: 4rem;
+			position: relative;
+			top: -40px;
+			right: -60px;
+		}
+	}
+
+}

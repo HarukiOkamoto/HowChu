@@ -1,0 +1,126 @@
+.stamp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.stamp h2 {
+  font-size: 2.5rem;
+}
+
+.stamp img {
+  position: relative;
+  top: -5rem;
+  right: -20rem;
+  text-align: right;
+  width: 150px;
+  height: 150px;
+}
+
+.stamp a {
+  position: relative;
+  top: -5rem;
+  right: -23rem;
+  font-size: 1.7rem;
+}
+
+.stamp p {
+  position: relative;
+  top: -15rem;
+  width: 22rem;
+  height: 22rem;
+  border: solid black 0.5px;
+  border-radius: 50%;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stampStamp {
+  position: relative;
+  top: -26rem;
+  right: -22rem;
+  width: 11rem;
+  height: 11rem;
+  background-color: #E24141;
+  border: solid black 0.5px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.stampStamp p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.stampStamp h2 {
+  font-size: 5rem;
+}
+
+.stampCalendar {
+  margin-top: -20rem;
+}
+
+.stampCalendar h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.stampCalendar table {
+  border: solid black 0.5px;
+  margin-bottom: 3rem;
+}
+
+.stampCalendar table td {
+  width: 5rem;
+  height: 5rem;
+  border: solid black 0.5px;
+}
+
+.stampCalendar table td p {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.5rem;
+  font-size: 3rem;
+  border: solid black 0.5px;
+  background-color: #F94949;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=stamp.css.map */

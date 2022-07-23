@@ -1,0 +1,127 @@
+// testMode で色を見やすくする
+$testMode: ture;
+@if $testMode{
+	// テスト色
+	html{
+		background-color: gray;
+		body{
+			background-color: white;
+		}
+	}
+}
+
+html{
+	// フォントサイズはremで決める	12px = 1.2rem
+	font-size: 62.5%;
+}
+body{
+	width: 390px;
+	margin: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+// ヘッダー
+.footerFill{
+	flex-grow: 1;
+}
+$header_height: 68px;
+header{
+	z-index: 10000;
+	width: 100%;
+	height: $header_height;
+	text-align: center;
+
+	border-bottom: solid gray 0.5px;
+	background-color: white;
+
+	position:sticky;
+	top:0;
+
+	img{
+		height: 100%;
+		padding: 5px;
+	}
+	.logo{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, 0);
+	}
+	.account{
+		float: right;
+		border-radius: 50%;
+	}
+}
+
+// フッター
+// 広告のcssはad.cssに記載
+$footer_height: 35px;
+footer{
+	z-index: 10000;
+	border-top: solid gray 0.5px;
+	background-color: white;
+	position: sticky;
+	bottom: 0;
+	ul{
+		height: $footer_height;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		li{
+			font-size: 1.2rem;
+			border: solid black 0.5px;
+
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	$homeColor: #ACFFE4;
+	$newsColor: #FFE9AE;
+	$kemopoColor: #EEB6FF;
+	.footerMarked_home{
+		background-color: $homeColor;
+	}
+	.footerMarked_news{
+		background-color: $newsColor;
+	}
+	.footerMarked_kemopo{
+		background-color: $kemopoColor;
+	}
+}
+
+// メイン
+.main{
+	width: 90%;
+	margin: auto;
+}
+
+// キャラプリセット
+$charaMesse_size: 150px;
+$charaMesse_messe_size: 200px;
+.charaMesse{
+	display: flex;
+
+	.charaMesse_img{
+		margin-top: 10px;
+		p{
+			font-size: 1.5rem;
+		}
+		img{
+			margin-top: 20px;
+			width: $charaMesse_size;
+			height: $charaMesse_size;
+		}
+	}
+	.charaMesse_messe{
+		height: $charaMesse_messe_size;
+		width: $charaMesse_messe_size;
+		border-radius: 50%;
+		border: solid black 0.5px;
+		background-color: #D4F3FF;
+	}
+}
