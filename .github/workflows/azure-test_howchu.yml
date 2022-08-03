@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'HowChu'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EEEF7137D54E4D61BC39EA1B7D377784 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF6ED83CA1E840B693EF2774FFA15C3F }}
           package: .
