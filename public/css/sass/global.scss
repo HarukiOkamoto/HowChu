@@ -1,0 +1,238 @@
+/* ========================================================
+共通
+=========================================================*/
+@charset "UTF-8";
+
+//フォント
+@font-face {
+    font-family: 'DIN2014';
+    src: url('../font/DIN2014/font-face/DIN2014_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN2014';
+    src: url('../font/DIN2014/font-face/DIN2014-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN2014';
+    src: url('../font/DIN2014/font-face/DIN2014-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// 全体
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #000000;
+    max-width: 390px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner {
+    padding: 0 15px;
+}
+
+.main {
+    background-color: #FFFCF0;
+    padding: 37px 0 30px;
+}
+
+// セクション
+.section {
+    margin-top: 40px;
+}
+
+.section-title {
+    background: #3F92BB;
+    border-radius: 8px 0 8px 0;
+    padding: 8px;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: 10;
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        display: inline-block;
+        padding-left: 5px;
+        
+        span {
+            font-family: 'DIN2014', sans-serif;
+            font-size: 22px;
+            display: inline-block;
+            line-height: 1;
+        }
+    }
+
+    img {
+        width: 16px;
+        vertical-align: bottom;
+    }
+}
+
+.section-body {
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+// バナー
+.banner {
+    margin-top: 24px;
+}
+
+// 吹きだし
+.balloon-wrap {
+
+    p {
+        font-size: 12px;
+        color: #777777;
+        font-weight: bold;
+    }
+
+    img {
+        width: 12px;
+        height: 16px;
+    }
+
+    .balloon {
+      position: relative;
+      background-color: #FFFCF0;
+      font-size: 12px;
+      font-weight: bold;
+      border: solid 3px #E0E0E0;
+      display: flex;
+      //   line-height: 1.3;
+      //   text-align: center;
+      //   letter-spacing: 0.05em;
+      padding: 8px;
+      border-radius: 16px;
+      box-shadow: 0px 10px 10px -3px rgb(224 224 224);
+    }
+  
+  
+    .base {
+      position: relative;
+      width: 7.5px;
+  
+      & .base-sankaku {
+        background-color: #E0E0E0;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        transform: rotate(90deg);
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        top: -2px;
+      }
+      
+      
+      & .sankaku {
+        background-color: #FFFCF0;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        margin: 0 auto;
+        transform: rotate(90deg);
+        position: absolute;
+        width: 10px;
+        height: 7px;
+        // left: 37%;
+        left: 3px;
+        top: -2px;
+      }      
+    }
+
+    &.balloon-reverse .base {
+      position: relative;
+      z-index: 1;
+      width: 7.5px;
+  
+      & .base-sankaku {
+        background-color: #E0E0E0;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        transform: rotate(-90deg);
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        top: -14px;
+      }
+      
+      
+      .sankaku {
+        background-color: #FFFCF0;
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        margin: 0 auto;
+        transform: rotate(-90deg);
+        position: absolute;
+        width: 10px;
+        height: 7px;
+        // left: 37%;
+        left: 3px;
+        top: -5px;
+      }      
+    }
+  }
+
+
+// 戻るリンク
+.section-link {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.back-link {
+    background: #777777;
+    border-radius: 8px 0 8px 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 8px 4px 27px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../image/back-icon.png) no-repeat center center/ contain;
+        width: 9px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 8px;
+    }
+}
+
+// 進むリンク
+.section-link {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.forward-link {
+    background: #777777;
+    border-radius: 8px 0 8px 0;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 27px 4px 8px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../image/foraward-icon.png) no-repeat center center/ contain;
+        width: 9px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+    }
+}
