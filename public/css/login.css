@@ -1,0 +1,101 @@
+/* ========================================================
+login
+=========================================================*/
+.login {
+  position: relative;
+}
+
+.login__body {
+  padding: 42px 10px 51px 10px;
+  position: relative;
+}
+
+.login-message-wrap {
+  height: 245px;
+}
+
+.login-balloon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.login-balloon .balloon {
+  width: 63%;
+}
+.login-balloon .base {
+  top: 10px;
+}
+.login-balloon .base .base-sankaku {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 10px;
+  left: -1px;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 90%);
+          clip-path: polygon(0 0, 0% 100%, 100% 90%);
+}
+.login-balloon .base .sankaku {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 14px;
+  left: -3px;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+          clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+.login-balloon img {
+  width: 16px;
+}
+.login-balloon p {
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.login-character {
+  width: 124px;
+  position: absolute;
+  top: 72px;
+  right: 16px;
+}
+
+.stamp-image {
+  width: 98px;
+  position: absolute;
+  top: 147px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.calendar-date {
+  font-family: "DIN2014", sans-serif;
+  font-size: 24px;
+  color: #3F92BB;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-table {
+  width: 100%;
+  margin-top: 22px;
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+.calendar-table td {
+  padding: 2px;
+  height: 66px;
+  width: 66px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 18px;
+  font-family: "DIN2014", sans-serif;
+  font-weight: bold;
+  color: #777777;
+  background: #FEFBEF;
+  position: relative;
+  z-index: 10;
+}
+.calendar-table td span {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}

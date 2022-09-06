@@ -1,0 +1,155 @@
+/* ========================================================
+header
+=========================================================*/
+.header {
+    background: #FFFCF0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 66px;
+        position: relative;
+    }
+
+    &__nav {
+        background: #FFF;
+        height: 40px;
+    }
+}
+
+.header-icon {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+
+    &.is-open {
+        & .header-icon__bar2 {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.header-icon__bar1 {
+    width: 21px;
+    height: 3px;
+    background: #777777;
+    border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.header-icon__bar2 {
+    width: 3px;
+    height: 21px;
+    background: #777777;
+    position: absolute;
+    border-radius: 1px;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.header-logo {
+    width: 82px;
+}
+
+.header-image {
+    width: 46px;
+}
+
+.header-nav-lists {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-list {
+    &:nth-child(n + 2) {
+        margin-left: 5%;
+    }
+}
+
+.header-nav-link  {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #3F92BB;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 40px;
+
+    @media screen and (max-width: 365px){
+        font-size: 3.287vw;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: #3F92BB;
+        border-radius: 0 4px 4px 0;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+
+    }
+
+    &:hover {
+
+        &::after {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+
+/* ========================================================
+menu
+=========================================================*/
+.menu-content {
+    background: #FFFCF0;
+    max-width: 390px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    z-index: 299;
+    display: none;
+}
+
+.menu-items {
+    background: #fff;
+}
+
+.menu-item-link {
+    text-decoration: none;
+}
+
+.menu-item {
+    border-bottom: 2px solid #E7E7E7;
+    padding: 14px 20px;
+
+    img {
+        width: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #3F92BB;
+        display: inline-block;
+
+        &.delete {
+            color: #B21A43;
+        }
+    }
+}
+
