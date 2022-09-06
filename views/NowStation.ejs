@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowChu</title>
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- global.css -->
+    <link rel="stylesheet" href="./css/global.css?1">
+    <!-- header.css -->
+    <link rel="stylesheet" href="./css/header.css?1">
+    <!-- transfer.css -->
+    <link rel="stylesheet" href="./css/transfer.css?1">
+    <!-- footer.css -->
+    <link rel="stylesheet" href="./css/footer.css?1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top inner">
+            <div id="js-menu">
+                <div class="header-icon">
+                    <div class="header-icon__bar1"></div>
+                    <div class="header-icon__bar2"></div>
+                </div>
+            </div>
+            <div class="menu-content">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon1.png" alt="">
+                            <p>MYエリア設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/NowStation" class="menu-item-link">
+                            <img src="./image/menu-icon2.png" alt="">
+                            <p>MY区間設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon3.png" alt="">
+                            <p>プロフィール設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" class="menu-item-link">
+                            <img src="./image/menu-icon4.png" alt="">
+                            <p>サインアウト</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon5.png" alt="">
+                            <p class="delete">アカウント削除</p>
+                        </a>
+                    </li>
+                </ul>
+           </div>
+            <!-- /.menu -->
+            <div class="header-logo"><img src="./image/logo.png" alt="HowChu"></div>
+            <div class="header-image"><img src="./image/header-image.png" alt="人物画像"></div>
+        </div>
+        <div class="header__nav">
+            <ul class="header-nav-lists">
+                <li class="header-nav-list"><a href="/index" class="header-nav-link">TOP</a></li>
+                <li class="header-nav-list"><a href="index.html#weather" class="header-nav-link">天気</a></li>
+                <li class="header-nav-list"><a href="/NowStation" class="header-nav-link">MY区間設定</a></li>
+                <li class="header-nav-list"><a href="index.html#news" class="header-nav-link">ニュース</a></li>
+                <li class="header-nav-list"><a href="/kemopo" class="header-nav-link">ログインスタンプ</a></li>
+            </ul>
+        </div>
+   </header>
+    <!-- /.header -->
+
+    <div class="main">
+        <div class="inner">
+            <section class="transfer">
+                <h2 class="section-title">
+                    <img src="./image/title-icon_transfer.png" alt="">
+                    <p>MY区間設定</p>
+                </h2>
+                <div class="transfer__body section-body">
+                    <p class="transfer-title">現在のMY区間</p>
+                    <div class="transfer-box-items">
+                        <div class="transfer-input-wrap">
+                            <div class="transfer-input-img">
+                                <img src="./image/pin_b.png" alt="マップピンの画像">
+                            </div>
+                            <div class="transfer-box-item">
+                                <p>北戸田駅</p>
+                            </div>
+                        </div>
+                        <div class="transfer-arrow"><img src="./image/arrow.png" alt=""></div>
+                        <div class="transfer-input-wrap">
+                            <div class="transfer-input-img">
+                                <img src="./image/pin_y.png" alt="マップピンの画像">
+                            </div>
+                            <div class="transfer-box-item">
+                                <p>新宿駅</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transfer-change-button"><a href="/ChangeStation" class="change-button">MY区間を変更する</a></div>
+                    <div class="section-link"><a href="/index" class="back-link">TOPへ</a></div>
+                </div>
+            </section>
+            <!-- /.transfer -->
+
+            <div class="banner">
+                <a href="" class="bannar-image"><img src="./image/banner-image.png" alt="バナー"></a>
+           </div>
+           <!-- /.banner -->
+
+        </div>
+        <!-- /.inner -->
+
+    </div>
+    <!-- /.main -->
+    
+    <footer class="footer">
+        <div class="contact">
+            <img src="./image/contact-icon.png" alt="">
+            <p>お問い合わせ</p>
+        </div>
+        <div class="footer-logo"><img src="./image/logo.png" alt="HowChu"></div>
+        <div class="to-top"><a href="#"><img src="./image/top-top.png" alt="TOPへ戻る"></a></div>
+   </footer>
+   <!-- /.footer -->
+
+   <!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <!-- original.js -->
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

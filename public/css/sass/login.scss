@@ -1,0 +1,105 @@
+/* ========================================================
+login
+=========================================================*/
+.login {
+    position: relative;
+}
+
+.login__body {
+    padding: 42px 10px 51px 10px;
+    position: relative;
+}
+
+.login-message-wrap {
+    height: 245px;
+}
+
+
+.login-balloon {
+    display: flex;
+
+    & .balloon {
+        width: 63%;
+    }
+
+    & .base {
+        top: 10px;
+
+        .base-sankaku {
+            transform: rotate(0deg);
+            top: 10px;
+            left: -1px;
+            clip-path: polygon(0 0, 0% 100%, 100% 90%);
+
+        }
+
+        .sankaku {
+            transform: rotate(0deg);
+            top: 14px;
+            left: -3px;
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        }
+    }
+
+    img {
+        width: 16px;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+    }
+}
+
+
+
+.login-character {
+    width: 124px;
+    position: absolute;
+    top: 72px;
+    right: 16px;
+}
+
+.stamp-image {
+    width: 98px;
+    position: absolute;
+    top: 147px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.calendar-date {
+    font-family: 'DIN2014', sans-serif;
+    font-size: 24px;
+    color: #3F92BB;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar-table {
+    width: 100%;
+    margin-top: 22px;
+    border-spacing: 2px;
+    border-collapse: separate;
+
+    td {
+        padding: 2px;
+        height: 66px;
+        width: 66px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        font-size: 18px;
+        font-family: 'DIN2014', sans-serif;
+        font-weight: bold;
+        color: #777777;
+        background: #FEFBEF;
+        position: relative;
+        z-index: 10;
+
+        span {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+    }
+}

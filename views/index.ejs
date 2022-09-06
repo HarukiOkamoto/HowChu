@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowChu</title>
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- global.css -->
+    <link rel="stylesheet" href="./css/global.css?1">
+    <!-- header.css -->
+    <link rel="stylesheet" href="./css/header.css?1">
+    <!-- index.css -->
+    <link rel="stylesheet" href="./css/index.css?1">
+    <!-- footer.css -->
+    <link rel="stylesheet" href="./css/footer.css?1">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top inner">
+            <div id="js-menu">
+                <div class="header-icon">
+                    <div class="header-icon__bar1"></div>
+                    <div class="header-icon__bar2"></div>
+                </div>
+            </div>
+            <div class="menu-content">
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon1.png" alt="">
+                            <p>MYエリア設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/NowStation" class="menu-item-link">
+                            <img src="./image/menu-icon2.png" alt="">
+                            <p>MY区間設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon3.png" alt="">
+                            <p>プロフィール設定</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/" class="menu-item-link">
+                            <img src="./image/menu-icon4.png" alt="">
+                            <p>サインアウト</p>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="" class="menu-item-link">
+                            <img src="./image/menu-icon5.png" alt="">
+                            <p class="delete">アカウント削除</p>
+                        </a>
+                    </li>
+                </ul>
+           </div>
+            <!-- /.menu -->
+            <div class="header-logo"><img src="./image/logo.png" alt="HowChu"></div>
+            <div class="header-image"><img src="./image/header-image.png" alt="人物画像"></div>
+        </div>
+        <div class="header__nav">
+            <ul class="header-nav-lists">
+                <li class="header-nav-list"><a href="/index" class="header-nav-link">TOP</a></li>
+                <li class="header-nav-list"><a href="#weather" class="header-nav-link">天気</a></li>
+                <li class="header-nav-list"><a href="/NowStation" class="header-nav-link">MY区間設定</a></li>
+                <li class="header-nav-list"><a href="#news" class="header-nav-link">ニュース</a></li>
+                <li class="header-nav-list"><a href="/kemopo" class="header-nav-link">ログインスタンプ</a></li>
+            </ul>
+        </div>
+   </header>
+    <!-- /.header -->
+
+   
+   
+   <div class="main">
+       <div class="inner">
+           <section id="weather" class="weather">
+                <h2 class="section-title">
+                    <img src="./image/title-icon_weather.png" alt="">
+                    <p>今日<span>08/21</span>(日)の天気</p>
+                </h2>
+                <div class="weather__body section-body">
+                    <div class="weather__text">
+                        <div class="weather-place">
+                            <img src="./image/weather-icon__place.png" alt="">
+                                <p><%= text[0]["address"]; %></p>
+                        </div>
+                        <div class="weather-temperature">
+                            <img src="./image/weather-icon__temperature.png" alt="">
+                            <p><span>32</span>-<span>26</span></p>
+                        </div>
+                        <div class="weather-probability">
+                            <img src="./image/weather-icon__probability.png" alt="">
+                            <p>午前<span>10%/</span>午後<span>10%</span></p>
+                        </div>
+                    </div>
+                    <div class="weather__image"><img src="./image/weather-image.png" alt="太陽のイラスト"></div>
+                    <div class="section-link">
+                        <a href="" class="forward-link">明日以降の天気</a>
+                    </div>
+                </div>
+           </section>
+           <!-- /.weather -->
+
+           <section class="message section">
+                <h2 class="section-title">
+                    <img src="./image/title-icon_message.png" alt="">
+                    <p>星ノ娘からメッセージ</p>
+                </h2>
+                <div class="message__body section-body">
+
+                    <div class="balloon-wrap message-balloon1">
+                        <div class="balloon">
+                            <img src="./image/balloon-icon1.png" alt="">
+                            <p>雨の心配はなさそう👍<br>傘はいらないね👌</p>  
+                        </div>
+                        <div class="base">
+                        <div class="base-sankaku"></div>
+                        <div class="sankaku"></div>
+                        </div>
+                    </div>
+
+                    <div class="balloon-wrap message-balloon2">
+                        <div class="balloon">
+                            <img src="./image/balloon-icon2.png" alt="">
+                            <p>気温は少し高そう...💦<br>熱中症に気を付けて❗</p>
+                        </div>
+                        <div class="base">
+                        <div class="base-sankaku"></div>
+                        <div class="sankaku"></div>
+                        </div>
+                    </div>
+
+                    <div class="balloon-wrap balloon-reverse message-balloon3">
+                        <div class="base">
+                            <div class="base-sankaku"></div>
+                            <div class="sankaku"></div>
+                        </div>
+                        <div class="balloon">
+                            <img src="./image/balloon-icon3.png" alt="">
+                            <p>電車は遅延してるみたい...😥<br>遅延情報をチェックしてね❗</p> 
+                        </div>
+                    </div>
+
+                    <div class="balloon-wrap balloon-reverse message-balloon4">
+                        <div class="base">
+                            <div class="base-sankaku"></div>
+                            <div class="sankaku"></div>
+                        </div>
+                        <div class="balloon">
+                            <img src="./image/balloon-icon4.png" alt="">
+                            <p>今日も1日頑張ろうね！😊<br>応援してるよ✌️</p> 
+                        </div>
+                    </div>
+
+                    <!-- <div class="balloon message-balloon1">
+                        <img src="./image/balloon.png" alt="">
+                        <img src="./image/balloon-icon1.png" alt="">
+                        <p>雨の心配はなさそう👍<br>傘はいらないね👌</p>
+                    </div> -->
+
+                    <!-- <div class="balloon message-balloon2">
+                        <img src="./image/balloon-icon2.png" alt="">
+                        <p>気温は少し高そう...💦<br>熱中症に気を付けて❗</p>
+                    </div>
+                    <div class="balloon message-balloon3">
+                        <img src="./image/balloon-icon3.png" alt="">
+                        <p>電車は遅延してるみたい...😥<br>遅延情報をチェックしてね❗</p>
+                    </div>
+                    <div class="balloon message-balloon4">
+                        <img src="./image/balloon-icon4.png" alt="">
+                        <p>今日も1日頑張ろうね！😊<br>応援してるよ✌️</p>
+                    </div> -->
+                    <div class="message-character"><img src="./image/message-character.png" alt=""></div>
+                    <div class="section-link"><a href="/kemopo" class="forward-link">スタンプを押す</a></div>
+
+
+                </div>
+           </section>
+           <!-- /.message -->
+
+           <section id="transfer" class="transfer section">
+                <h2 class="section-title transfer-title">
+                    <img src="./image/title-icon_transfer.png" alt="">
+                    <p>MY区間</p>
+                </h2>
+                <div class="transfer__body section-body">
+                    <div class="transfer-body-top">
+                        <div class="transfer-input-items">
+                            <div class="transfer-input-item">
+                                <img src="./image/pin_b.png" alt="マップピンの画像">
+                                <input type="text" placeholder="<%- text[0]["dep_station"]; %>駅">
+                            </div>
+                            <div class="transfer-arrow"><img src="./image/arrow.png" alt=""></div>
+                            <div class="transfer-input-item">
+                                <img src="./image/pin_y.png" alt="マップピンの画像">
+                                <input type="text" placeholder="<%- text[0]["des_station"];%>駅">
+                            </div>
+                        </div>
+                        <div class="transfer-time-wrap">
+                            <p class="transfer-time">出発目安時刻<br>06:45</p>
+                            <p class="transfer-time">到着目安時刻<br>07:15</p>
+                        </div>
+                    </div>
+                    <div class="required-time">
+                        <p>所要時間</p>
+                        <img src="./image/arrow-icon.png" alt="右矢印">
+                        <p><span>30</span>分（遅延非考慮）</p>
+                    </div>
+                    <div class="delay-info-wrap">
+                        <div class="delay-info">
+                            <p class="delay-info__heading">JR埼京線</p>
+                            <p class="delay-info__detail">○○駅～○○駅 ○○の影響　○分遅延</p>
+                        </div>
+                        <div class="delay-info">
+                            <p class="delay-info__heading">JR山手線</p>
+                            <p class="delay-info__detail">○○駅～○○駅 ○○の影響　○分遅延</p>
+                        </div>
+                    </div>
+                    <div class="section-link"><a href='/NowStation' class="forward-link">MY区間の変更</a></div>
+                </div>
+           </section>
+           <!-- /.transfer -->
+
+           <section id="news" class="news section">
+                <h2 class="section-title">
+                    <img src="./image/title-icon_news.png" alt="">
+                    <p>本日のニュース</p>
+                </h2>
+                <div class="news__body section-body">
+                    <article class="news-item">
+                        <a href="" class="news-item-link">
+                            <div class="news-item__image"><img src="./image/news-image1.png" alt="ニュース画像"></div>
+                            <div class="news-item__body">
+                                <p class="news-item-title">伊大統領、対日改善へにじむ思惑</p>
+                                <div class="news-item-date">8月20日16：00</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-item">
+                        <a href="" class="news-item-link">
+                            <div class="news-item__image"><img src="./image/news-image2.png" alt="ニュース画像"></div>
+                            <div class="news-item__body">
+                                <p class="news-item-title">シアン流出　日鉄が重篤と謝罪</p>
+                                <div class="news-item-date">8月20日16：00</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-item">
+                        <a href="" class="news-item-link">
+                            <div class="news-item__image"><img src="./image/news-image1.png" alt="ニュース画像"></div>
+                            <div class="news-item__body">
+                                <p class="news-item-title">伊大統領、対日改善へにじむ思惑</p>
+                                <div class="news-item-date">8月20日16：00</div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="news-item">
+                        <a href="" class="news-item-link">
+                            <div class="news-item__image"><img src="./image/news-image2.png" alt="ニュース画像"></div>
+                            <div class="news-item__body">
+                                <p class="news-item-title">シアン流出　日鉄が重篤と謝罪</p>
+                                <div class="news-item-date">8月20日16：00</div>
+                            </div>
+                        </a>
+                    </article>
+                    <div class="section-link"><a href="" class="forward-link">昨日までのNEWS</a></div>
+                </div>
+           </section>
+           <!-- /.news -->
+
+           <div class="banner">
+                <a href="" class="bannar-image"><img src="./image/banner-image.png" alt="バナー"></a>
+           </div>
+           <!-- /.banner -->
+
+        </div>
+        <!-- /.inner -->
+    </div>
+    <!-- /.main -->
+
+    <footer class="footer">
+         <div class="contact">
+             <img src="./image/contact-icon.png" alt="">
+             <p>お問い合わせ</p>
+         </div>
+         <div class="footer-logo"><img src="./image/logo.png" alt="HowChu"></div>
+         <div class="to-top"><a href="#"><img src="./image/top-top.png" alt="TOPへ戻る"></a></div>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- original.js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
