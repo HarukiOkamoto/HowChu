@@ -13,7 +13,7 @@ const con = mysql.createConnection({
   user: 'OkamotoHaruki',
   password: 'Sniper159357',
   database: 'howchudb',
-  port:3306,
+  port: 3306,
   // ssl:{ca:fs.readFileSync("{ca-cert DigiCertGlobalRootCA.crt.pem}")}
 });
 
@@ -41,7 +41,7 @@ var session_opt = {
   secret: 'keybord cat',
   resave: false,
   saveUninitialized: false,
-  cokkie: {maxAge: 60 * 60 * 1000}
+  cokkie: { maxAge: 60 * 60 * 1000 }
 }
 app.use(session(session_opt));
 
@@ -57,21 +57,21 @@ con.connect((err) => {
 //rooting
 var txt = 0;
 app.get('/', (req, res) => {
-  res.render('login.ejs',{error:txt});
+  res.render('login.ejs', { error: txt });
 }
 );
 
-app.get('/NowStation',(req,res) => {
+app.get('/NowStation', (req, res) => {
   res.render('NowStation.ejs');
 }
 );
 
-app.get('/ChangeStation',(req,res) => {
+app.get('/ChangeStation', (req, res) => {
   res.render('ChangeStation.ejs');
 }
 );
 
-app.get('/kemopo',(req,res) => {
+app.get('/kemopo', (req, res) => {
   res.render('kemopo.ejs');
 }
 );
@@ -80,15 +80,15 @@ app.get('/kemopo',(req,res) => {
 // //session保存
 //login処理
 app.post('/session', (req, res) => {
- //POSTで送信された値を格納
+  //POSTで送信された値を格納
   var mail = req.body['mail'];
- //セッションにmailの値を保存
+  //セッションにmailの値を保存
   req.session.mail = mail;
   var login = req.body['password'];
   req.session.password = login;
 
   //DBとパスワード照合
-  var password = con.query("SELECT `password` FROM users where `mail` = ?",[req.session.mail],function(err, rows, fields) {
+  var password = con.query("SELECT `password` FROM users where `mail` = ?", [req.session.mail], function (err, rows, fields) {
     if (err) {
       console.log('can not connect');
       console.log(err);
@@ -97,24 +97,24 @@ app.post('/session', (req, res) => {
     for (var i in rows) {
       password = rows[i].password;
     }
-  if(password == login){
-    //res.redirect('[/home]');
-    res.redirect('/index');
-  } else {
-    res.redirect('/');
-  }
-})
+    if (password == login) {
+      //コールバック関数でDB情報取得
+      DataSet;
+      res.redirect('/index');
+    } else {
+      res.redirect('/');
+    }
+  })
 });
 
-//情報表示
-// app.get(「'/home'」, (req, res) => {
+//ユーザ情報表示 コールバック
+const DataSet =
 app.get('/index', (req, res) => {
   con.query(
-    'SELECT address,dep_station,des_station FROM users where `mail` = ?',[req.session.mail],
+    'SELECT address,dep_station,des_station FROM users where `mail` = ?', [req.session.mail],
     (error, results) => {
-      console.log(results);
-      // res.render('home.ejs',{text:results})
-      res.render('index.ejs',{text:results})
+      // console.log(results);
+      res.render('index.ejs', { text: results })
     }
   )
 });
@@ -131,12 +131,12 @@ app.get('/index', (req, res) => {
 // });
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
